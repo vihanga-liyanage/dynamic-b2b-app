@@ -1,0 +1,50 @@
+{
+  "industry": "healthcare",
+  "theme": {
+    "primaryColor": "#3f51b5",
+    "secondaryColor": "#f50057",
+    "backgroundColor": "#f5f5f5",
+    "textColor": "#333333"
+  },
+  "logo": {
+    "main": "/logo192.png",
+    "small": "/logo192.png"
+  },
+  "texts": {
+    "welcomeMessage": "Welcome to the Healthcare Portal",
+    "dashboardTitle": "Healthcare Dashboard",
+    "loginTitle": "Login to Healthcare Portal"
+  },
+  "dashboardWidgets": [
+    {
+      "id": "patientSummary",
+      "title": "Patient Summary",
+      "type": "counter",
+      "data": {
+        "total": 1250,
+        "new": 15,
+        "active": 320
+      }
+    },
+    {
+      "id": "appointmentsToday",
+      "title": "Today's Appointments",
+      "type": "list",
+      "data": [
+        { "time": "9:00 AM", "patient": "John Doe", "type": "Check-up" },
+        { "time": "10:30 AM", "patient": "Jane Smith", "type": "Follow-up" },
+        { "time": "2:00 PM", "patient": "Robert Johnson", "type": "Consultation" }
+      ]
+    },
+    {
+      "id": "recentActivity",
+      "title": "Recent Activity",
+      "type": "timeline",
+      "data": [
+        { "time": "8:45 AM", "action": "Patient check-in", "details": "John Doe checked in for appointment" },
+        { "time": "9:30 AM", "action": "Prescription updated", "details": "Dr. Smith updated Jane Doe's prescription" },
+        { "time": "11:15 AM", "action": "Lab results received", "details": "Blood work results received for Robert Johnson" }
+      ]
+    }
+  ]
+}

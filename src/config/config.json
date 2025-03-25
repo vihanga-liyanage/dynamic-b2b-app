@@ -1,0 +1,75 @@
+{
+  "appName": "Asgardeo B2B Showcase",
+  "theme": {
+    "primaryColor": "#1976d2",
+    "secondaryColor": "#dc004e",
+    "backgroundColor": "#f5f5f5",
+    "textColor": "#333333"
+  },
+  "logo": {
+    "main": "/logo192.png",
+    "small": "/logo192.png"
+  },
+  "menuItems": [
+    {
+      "id": "dashboard",
+      "label": "Dashboard",
+      "icon": "Dashboard",
+      "path": "/dashboard",
+      "requiredScope": "dashboard:view"
+    },
+    {
+      "id": "patients",
+      "label": "Patients",
+      "icon": "People",
+      "path": "/patients",
+      "requiredScope": "patients:view"
+    },
+    {
+      "id": "appointments",
+      "label": "Appointments",
+      "icon": "Event",
+      "path": "/appointments",
+      "requiredScope": "appointments:view"
+    },
+    {
+      "id": "reports",
+      "label": "Reports",
+      "icon": "Assessment",
+      "path": "/reports",
+      "requiredScope": "reports:view"
+    },
+    {
+      "id": "settings",
+      "label": "Settings",
+      "icon": "Settings",
+      "path": "/settings",
+      "requiredScope": "settings:view"
+    }
+  ],
+  "dashboardWidgets": [
+    {
+      "id": "patientSummary",
+      "title": "Patient Summary",
+      "type": "counter",
+      "requiredScope": "patients:view"
+    },
+    {
+      "id": "appointmentsToday",
+      "title": "Today's Appointments",
+      "type": "list",
+      "requiredScope": "appointments:view"
+    },
+    {
+      "id": "recentActivity",
+      "title": "Recent Activity",
+      "type": "timeline",
+      "requiredScope": "activity:view"
+    }
+  ],
+  "texts": {
+    "welcomeMessage": "Welcome to the Healthcare Portal",
+    "dashboardTitle": "Healthcare Dashboard",
+    "loginTitle": "Login to Healthcare Portal"
+  }
+}
